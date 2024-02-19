@@ -4,6 +4,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            activeSlideIndex: 0,
             slides: [
                 {
                     image: 'img/01.webp',
@@ -29,7 +30,9 @@ createApp({
             ]
         }
     },
+
     methods: {
+
 
     }
 
