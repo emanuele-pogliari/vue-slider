@@ -46,10 +46,18 @@ createApp({
         },
         clickSlides(index) {
             this.activeSlideIndex = index;
-        }
+        },
 
+
+        autoSlide() {
+            setInterval(() => {
+                this.nextSlide();
+            }, 2000);
+        },
+    },
+    mounted() {
+        this.autoSlide()
     }
-
 }).mount('#app')
 
 
