@@ -34,11 +34,19 @@ createApp({
     methods: {
         prevSlide() {
             this.activeSlideIndex--;
+            if (this.activeSlideIndex < 0) {
+                this.activeSlideIndex = this.slides.length - 1;
+            }
         },
         nextSlide() {
             this.activeSlideIndex++;
+            if (this.activeSlideIndex > this.slides.length - 1) {
+                this.activeSlideIndex = 0;
+            }
+        },
+        clickSlides(index) {
+            this.activeSlideIndex = index;
         }
-
 
     }
 
