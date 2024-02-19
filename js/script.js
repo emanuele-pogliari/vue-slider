@@ -32,6 +32,12 @@ createApp({
     },
 
     methods: {
+        prevSlide() {
+            this.activeSlideIndex--;
+        },
+        nextSlide() {
+            this.activeSlideIndex++;
+        }
 
 
     }
