@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(85, 112, 232);
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .item {
@@ -30,10 +32,15 @@ body {
 
 .item .text {
     position: absolute;
-    right: 20px;
+    left: 2.5%;
+    width: 95%;
+    border-radius: 10px;
+    padding: 5px 15px;
+    overflow: hidden;
     bottom: 20px;
     text-align: right;
     color: white;
+    background-color: rgba(0, 0, 0, 0.524);
 }
 
 .thumbs {
@@ -107,4 +114,47 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     bottom: 35%;
     left: 50%;
     transform: translate(-50%) rotate(135deg);
+}
+
+.slider-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.637);
+}
+
+@media screen and (max-width: 992px) {
+    .thumbs {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .thumb {
+        width: calc(100%/5);
+    }
+
+
+    .next {
+        transform: rotate(-90deg);
+        left: 95%;
+        top: 15%;
+
+    }
+
+    .prev {
+        transform: rotate(-90deg);
+        left: 5%;
+        top: 15%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+
+
+
 }
