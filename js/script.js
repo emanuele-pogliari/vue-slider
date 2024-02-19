@@ -48,16 +48,21 @@ createApp({
             this.activeSlideIndex = index;
         },
 
-
         autoSlide() {
-            setInterval(() => {
+            this.intervalSlides = setInterval(() => {
                 this.nextSlide();
             }, 2000);
         },
+
+        pause() {
+            clearInterval(this.intervalSlides);
+        }
     },
+
     mounted() {
-        this.autoSlide()
+        this.autoSlide();
     }
+
 }).mount('#app')
 
 
