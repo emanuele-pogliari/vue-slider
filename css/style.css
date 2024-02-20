@@ -17,6 +17,18 @@ body {
     flex-direction: column;
 }
 
+.logo-container {
+    width: 500px;
+}
+
+.img-logo {
+    width: 100px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .item {
     float: left;
     width: 700px;
@@ -153,8 +165,4 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     .item {
         width: 100%;
     }
-
-
-
-
 }

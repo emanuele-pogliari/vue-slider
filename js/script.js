@@ -51,7 +51,7 @@ createApp({
         autoSlide() {
             this.intervalSlides = setInterval(() => {
                 this.nextSlide();
-            }, 2000);
+            }, 3000);
         },
 
         pause() {
